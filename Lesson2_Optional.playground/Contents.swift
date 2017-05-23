@@ -1,8 +1,10 @@
-//: Playground - noun: a place where people can play
-
+//: # All about Optional
 import UIKit
 
-var str = "Hello, playground"
+
+
+
+//: ### Unwrapping Optionals with if let
 
 // Example 1
 var zee: Int?
@@ -33,3 +35,17 @@ if let image = imageView.image {
 }
 
 imageView.image
+
+
+//: ### Optional Chaining
+
+// Example 1
+var anotherImageView = UIImageView()
+anotherImageView.image = UIImage(named: "puppy_in_box")
+
+if let imageSize = imageView.image?.size {
+    print("\(imageSize)")
+} else {
+    print("This image hasn't been set.")
+}
+
