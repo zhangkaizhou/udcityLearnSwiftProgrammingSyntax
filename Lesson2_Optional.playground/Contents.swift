@@ -18,3 +18,18 @@ if let zee = zee {
 } else {
     print("no value")
 }
+
+// Example 2
+var imageView = UIImageView()
+imageView.image = UIImage(named:"puppy_in_box")
+
+// let imageSize = imageView.image.size
+
+if let image = imageView.image {
+    let size = image.size
+    print(size)
+} else {
+    print("This image hasn't been set.")
+}
+
+imageView.image
